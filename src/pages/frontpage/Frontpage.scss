@@ -1,0 +1,120 @@
+.Frontpage {
+    .first-section {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 85vh;
+  
+      .text-content {
+        position: absolute;
+        top: 18vh;
+        left: 10vw;
+        width: 34vw;
+        text-align: left;
+        padding: 20px;
+        border-radius: 10px;
+  
+        h2 {
+          color: black;
+          font-size: 3.636vw;
+          margin-bottom: 1.3vw;
+          
+          span {
+            color: #F64C72;
+          }
+
+          .delicious {
+            color: #28BEB3;
+          }
+        }
+
+        h3 {
+          color: grey;
+          margin-top: 1.948vw;
+          font-size: 1.22vw;
+        }
+
+        button {
+          background-color: #F64C72;
+          border-radius: 6.494vw;
+          padding: 1.591vh 1.299vw;
+          padding-left: 2.597vw;
+          margin-top: 3.315vh;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          border: none;
+
+          transition: all 0.2s linear 0s;
+          
+          &:after {
+            content: '\1F87A';
+            font-size: 17px;
+            position: relative;
+            top: 50%;
+            right: -10px;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: 0.5s;
+            color: white;
+          }
+        
+          &:hover {
+            padding: 12px 30px;
+            cursor: pointer;
+            background-color: #fca300;
+        
+            &:after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .right-image {
+        position: absolute;
+        left: 50%;
+        top: 16%;
+      }
+    }
+
+    .second-section {
+      height: 100vh;
+      width: 94.5vw;
+      padding-left: 5.3vw;
+      padding-top: 6vh;
+      background-image: url('./assets/background3.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .title {
+        text-align: center;
+        margin-bottom: 1vh;
+        margin-right: 5.5vw;
+        font-family: Helvetica;
+        font-size: 2.727vw;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: #F64C72;
+      }
+      
+      .panels-container {
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5vw;
+      }
+    }
+
+    .third-section {
+      margin-right: 5.5vw;
+      padding-bottom: 5vh;
+
+      .panel-row {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+}
+  

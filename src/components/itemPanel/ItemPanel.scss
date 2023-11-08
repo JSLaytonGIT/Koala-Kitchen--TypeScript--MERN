@@ -1,0 +1,104 @@
+.item-panel {
+    padding: 20px;
+    margin: 5vh 5vw;
+    width: 10%;
+    height: 41vh;
+    flex: 1;
+    margin: 10px;
+    background-color: rgba(255,255,255,1);
+    border-radius: 6vh;
+    box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        animation: scaleUp 0.3s forwards;
+    }
+
+    @keyframes scaleUp {
+        0% {
+            transform: scale(1);
+        } 100% {
+            transform: scale(1.05);
+        }
+    }
+
+    &:not(:hover) {
+        animation: scaleDown 0.3s forwards;
+    }
+
+    @keyframes scaleDown {
+        0% {
+            transform: scale(1.05);
+        } 100% {
+            transform: scale(1);
+        }
+    }
+
+    .panel-image {
+        width: 18vw;
+        height: 30vh;
+        margin-left: 0.1vw;
+        border-radius: 3vw;
+    }
+      
+    h4 {
+        position: relative;
+        top: -4%;
+        left: 8%;
+        font-family: Helvetica;
+        font-size: 22px;
+        text-decoration: underline;
+        text-decoration-color: #F64C72;    
+    }
+
+    h4:nth-child(3) {
+        top: -10%;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .cart-icon {
+        position: relative;
+        top: -34%;
+        left: 82.5%;
+        z-index: 1;
+    }
+
+    .cart-buttons {
+        position: relative;
+        top: -41.4%;
+        left: 67.3%;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+        z-index: 2;
+
+        .count {
+            margin: 0.4vw;
+            position: relative;
+            top: -0.4vh;
+            font-family: Helvetica;
+            font-weight: bold;
+        }
+
+        .add-to-cart-button {
+            position: relative;
+            top: 3.7vh;
+            right: 4.2vw;
+            background-color: #28BEB3;
+            color: white;
+            border: 0px;
+            border-radius: 1vw;
+            padding: 0.5vh 0.7vw;
+            font-size: 12px;
+            font-family: Helvetica;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            } 100% {
+                opacity: 1;
+            }
+        }
+    }
+}

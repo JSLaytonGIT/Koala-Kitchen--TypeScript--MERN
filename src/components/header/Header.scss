@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.2vh 6.494vw;
+    background-color: rgba(0,0,0, 0); ;
+    color: black;
+    
+    .header-logo {
+      font-size: 1.558vw;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo-text {
+        margin-left: 0.649vw;
+      }
+    }
+    
+    .header-links {
+      margin-top: 0.5vh;
+      
+      a {
+        margin: 0 0.974vw;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 1.1vw;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      margin-right: 9.5vw;
+    }
+    
+    .header-icons {
+      margin-top: 0.8vh;
+      margin-right: 1.6vw;
+      .search-button {
+        margin-right: 1.948vw;
+      }
+    }
+  }
+  

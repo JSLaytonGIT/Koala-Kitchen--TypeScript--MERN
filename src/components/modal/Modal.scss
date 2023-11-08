@@ -1,0 +1,41 @@
+.modal {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    border: 1px black solid;
+    border-radius: 30px;
+    background: rgba($color: #fee6eb, $alpha: 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    z-index: 99;
+    
+    .modal-content {
+        .title {
+            position: relative;
+            top: -40px;
+            left: 38.5%;
+        }
+
+        button {
+            position: relative;
+            left: 36%;
+            background-color: #F64C72;
+            border-radius: 6.494vw;
+            padding: 13px 26px;
+            margin-top: 7%;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #fc5800;
+            }
+        }
+    }
+}
