@@ -1,3 +1,7 @@
+NOTE: this application is still under construction.
+
+Click here to run the application. VERCEL LINK: https://koala-kitchen-type-script-mern-stack-7o92.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
